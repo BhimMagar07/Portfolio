@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,13 +9,21 @@
     content="Dhurba Bikram Malla is a Nepalese Karate Master, 6th Dan instructor, AKF Kumite Referee and Kata Judge, coach, and sports leader with decades of national and international karate experience." />
   <meta name="keywords"
     content="Dhurba Bikram Malla, Dhurba Bikram Malla Karate, Karate Master Nepal, Karate Coach Nepal, AKF Referee Nepal, Asian Karate Federation Referee, Karate Judge Nepal, 6th Dan Karate Nepal, Balaju Karate-Do Academy, Nepal Karate, Dhurba Guru, DV Malla, Dhurba, Dhurba Bikram, Balaju Dojo, Karate, Karate Nepal, Balaju Karate, Guru, Balaju Guru, Balaju Karate, Balaju Karate Do, Karate Kathmandu, Karate Nepal, Kata Judge, Referee, Coach, Karate Coach" />
+  <meta name="theme-color" content="#1e3a5f" />
+  <meta name="robots" content="index, follow" />
+  <!-- Preload hero image (LCP) -->
+  <link rel="preload" as="image" href="assets/images/profile.webp" type="image/webp" fetchpriority="high" />
+  <!-- Non-blocking Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="icon" type="image/png" href="assets/images/profile.png" />
-  <link rel="apple-touch-icon" href="assets/images/profile.png" />
+    rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet" /></noscript>
+  <!-- Tiny SVG favicon (no large PNG needed) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231e3a5f'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Arial' font-weight='bold' font-size='14' fill='white'%3EDBM%3C/text%3E%3C/svg%3E" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -48,7 +56,11 @@
       <div class="hero-badge"><span class="badge-dot"></span>6th Dan Black Belt &bull; AKF Certified Referee</div>
       <div class="hero-photo-wrapper">
         <div class="hero-photo-ring"></div>
-        <img src="assets/images/profile.png" alt="Dhurba Bikram Malla" class="hero-photo" id="hero-photo" />
+        <picture>
+          <source srcset="assets/images/profile.webp" type="image/webp" />
+          <img src="assets/images/profile.webp" alt="Dhurba Bikram Malla" class="hero-photo" id="hero-photo"
+            width="340" height="340" fetchpriority="high" decoding="async" />
+        </picture>
         <div class="photo-placeholder" id="photo-placeholder"><span>DBM</span></div>
       </div>
       <h1 class="hero-name">Dhurba Bikram<br /><em>Malla</em></h1>
@@ -268,7 +280,7 @@
           <div class="timeline-events">
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>13th South Asian Games (SAG) 2019</h4>
                 <p>Nepal &middot; 2019</p>
@@ -276,7 +288,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/uae.png" alt="uae"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/uae.webp" type="image/webp" /><img class="flag-img" src="assets/images/uae.webp" alt="UAE flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>WKF Premier League Karate Championship</h4>
                 <p>Dubai, UAE &middot; 2018</p>
@@ -284,7 +296,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/srilanka.png" alt="srilanka"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/srilanka.webp" type="image/webp" /><img class="flag-img" src="assets/images/srilanka.webp" alt="Sri Lanka flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>4th South Asian Karate Championship</h4>
                 <p>Colombo, Sri Lanka &middot; 2017</p>
@@ -292,7 +304,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/kazakhstan.png" alt="kazakhstan"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/kazakhstan.webp" type="image/webp" /><img class="flag-img" src="assets/images/kazakhstan.webp" alt="Kazakhstan flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>Asian Karate Championship</h4>
                 <p>Astana, Kazakhstan &middot; 2017</p>
@@ -300,7 +312,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>IMA International Karate Championship</h4>
                 <p>Dashrath Stadium, Kathmandu, Nepal &middot; 10-11 June 2017</p>
@@ -316,7 +328,7 @@
           <div class="timeline-events">
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>3rd International Open Karate Championship</h4>
                 <p>Kuala Lumpur, Malaysia &middot; 2-4 December 2016</p>
@@ -324,7 +336,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/indonesia.png" alt="indonesia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/indonesia.webp" type="image/webp" /><img class="flag-img" src="assets/images/indonesia.webp" alt="Indonesia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>15th Asian Junior &amp; U-21 Championship</h4>
                 <p>Indonesia &middot; 25-27 November 2016</p>
@@ -332,7 +344,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/india.png" alt="india"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/india.webp" type="image/webp" /><img class="flag-img" src="assets/images/india.webp" alt="India flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>3rd South Asian Karate Championship</h4>
                 <p>Delhi, India &middot; 23-25 September 2016</p>
@@ -340,7 +352,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/japan.png" alt="japan"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/japan.webp" type="image/webp" /><img class="flag-img" src="assets/images/japan.webp" alt="Japan flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>Asian Karate Championship</h4>
                 <p>Yokohama, Japan &middot; September 2015</p>
@@ -348,7 +360,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/thailand.png" alt="thailand"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/thailand.webp" type="image/webp" /><img class="flag-img" src="assets/images/thailand.webp" alt="Thailand flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>Thailand Open Karate Championship</h4>
                 <p>Bangkok, Thailand &middot; 26-30 July 2015</p>
@@ -356,7 +368,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>14th AKF Cadet, Junior &amp; U-21 Karate Championship</h4>
                 <p>Kuala Lumpur, Malaysia &middot; 2014</p>
@@ -364,7 +376,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/uae.png" alt="uae"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/uae.webp" type="image/webp" /><img class="flag-img" src="assets/images/uae.webp" alt="UAE flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>4th Dubai Open International Karate Championship</h4>
                 <p>Dubai, UAE &middot; 29 January - 2 February 2015</p>
@@ -380,7 +392,7 @@
           <div class="timeline-events">
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/india.png" alt="india"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/india.webp" type="image/webp" /><img class="flag-img" src="assets/images/india.webp" alt="India flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>8th International Sports Meet for World Peace and Unity EXPO</h4>
                 <p>Lucknow, India &middot; 26-29 October 2013</p>
@@ -388,7 +400,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/uae.png" alt="uae"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/uae.webp" type="image/webp" /><img class="flag-img" src="assets/images/uae.webp" alt="UAE flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>12th AKF Senior &amp; 13th Junior Karate Championship</h4>
                 <p>Hamdan Bin Mohammed Sports Complex, Dubai, UAE &middot; 2013</p>
@@ -396,7 +408,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>KOI Open Karate Championship 2012</h4>
                 <p>Kuala Lumpur, Malaysia &middot; 14-16 December 2012</p>
@@ -404,7 +416,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>Asian Karate Referee Clinic &amp; Examination (AKF)</h4>
                 <p>Malaysia &middot; 22 April 2012</p>
@@ -412,7 +424,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/uae.png" alt="uae"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/uae.webp" type="image/webp" /><img class="flag-img" src="assets/images/uae.webp" alt="UAE flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>Dubai Open Karate Championship</h4>
                 <p>UAE &middot; 2-4 February 2012 &middot; Referee Course at Al-Ahli Club</p>
@@ -428,7 +440,7 @@
           <div class="timeline-events">
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>20th KOI World Cup &amp; Training Camp</h4>
                 <p>Selangor, Malaysia &middot; 25-31 July 2011</p>
@@ -436,7 +448,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>4th Asian KOI Championship</h4>
                 <p>Putrajaya, Malaysia &middot; December 2011</p>
@@ -444,7 +456,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>SMA Cup</h4>
                 <p>Malaysia &middot; 4-6 March 2011</p>
@@ -452,7 +464,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>IPOH City International Karate Championship</h4>
                 <p>Malaysia &middot; 2011</p>
@@ -460,7 +472,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/india.png" alt="india"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/india.webp" type="image/webp" /><img class="flag-img" src="assets/images/india.webp" alt="India flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>EXPO International Sports for World Peace</h4>
                 <p>Lucknow, India &middot; 23-26 October 2010</p>
@@ -468,7 +480,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/india.png" alt="india"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/india.webp" type="image/webp" /><img class="flag-img" src="assets/images/india.webp" alt="India flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>International Karate Championship</h4>
                 <p>Rajasthan, India &middot; 20-22 August 2010</p>
@@ -476,7 +488,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/singapore.png" alt="singapore"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/singapore.webp" type="image/webp" /><img class="flag-img" src="assets/images/singapore.webp" alt="Singapore flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>30th Anniversary Asian Pacific Open Championship</h4>
                 <p>Singapore &middot; 11 September 2010</p>
@@ -484,7 +496,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/india.png" alt="india"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/india.webp" type="image/webp" /><img class="flag-img" src="assets/images/india.webp" alt="India flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>III SAARC All Style Open Karate Championship</h4>
                 <p>Noida, India &middot; 21-25 May 2008</p>
@@ -500,7 +512,7 @@
           <div class="timeline-events">
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/malaysia.png" alt="malaysia"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/malaysia.webp" type="image/webp" /><img class="flag-img" src="assets/images/malaysia.webp" alt="Malaysia flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>3rd Asian KOI Championship</h4>
                 <p>Malaysia &middot; 3-6 December 2009</p>
@@ -508,7 +520,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/india.png" alt="india"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/india.webp" type="image/webp" /><img class="flag-img" src="assets/images/india.webp" alt="India flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>Ind South Asian Karate Championship</h4>
                 <p>New Delhi, India &middot; 12 February 2006</p>
@@ -516,7 +528,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/india.png" alt="india"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/india.webp" type="image/webp" /><img class="flag-img" src="assets/images/india.webp" alt="India flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>1st Indo-Nepal International Karate &amp; Kick Boxing Championship</h4>
                 <p>Delhi, India &middot; 2-3 January 2006</p>
@@ -532,7 +544,7 @@
           <div class="timeline-events">
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/india.png" alt="india"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/india.webp" type="image/webp" /><img class="flag-img" src="assets/images/india.webp" alt="India flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>YMCA Delhi State Karate &amp; Kick Boxing Championship</h4>
                 <p>New Delhi, India &middot; 28-30 November 1998</p>
@@ -540,7 +552,7 @@
             </div>
 
             <div class="event-card" data-aos="fade-up">
-              <div class="event-flag"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+              <div class="event-flag"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="38" height="28" loading="lazy" /></picture></div>
               <div class="event-info">
                 <h4>International Invitation Karate Championship</h4>
                 <p>Tikapur, Nepal &middot; 31 October - 2 November 1996 &middot; Referee</p>
@@ -567,7 +579,7 @@
       <div class="national-grid">
 
         <div class="nat-card" data-aos="fade-up">
-          <div class="nat-num"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+          <div class="nat-num"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="42" height="30" loading="lazy" /></picture></div>
           <div class="nat-content">
             <h4>5th National Championship</h4>
             <p>Kathmandu, Nepal &middot; 15-21 April 2009 &middot; <em>Referee</em></p>
@@ -575,7 +587,7 @@
         </div>
 
         <div class="nat-card" data-aos="fade-up">
-          <div class="nat-num"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+          <div class="nat-num"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="42" height="30" loading="lazy" /></picture></div>
           <div class="nat-content">
             <h4>National Referee Seminar</h4>
             <p>Kathmandu, Nepal &middot; 23-25 May 1998</p>
@@ -583,7 +595,7 @@
         </div>
 
         <div class="nat-card" data-aos="fade-up">
-          <div class="nat-num"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+          <div class="nat-num"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="42" height="30" loading="lazy" /></picture></div>
           <div class="nat-content">
             <h4>4th National Games Championship</h4>
             <p>Palpa, Nepal &middot; 5-11 November 1996 &middot; 2053 &middot; <em>Referee</em></p>
@@ -591,7 +603,7 @@
         </div>
 
         <div class="nat-card" data-aos="fade-up">
-          <div class="nat-num"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+          <div class="nat-num"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="42" height="30" loading="lazy" /></picture></div>
           <div class="nat-content">
             <h4>8th All Nepal Karate Championship</h4>
             <p>Janakpur, Nepal &middot; 17-19 August 1995 &middot; <em>Referee</em></p>
@@ -599,7 +611,7 @@
         </div>
 
         <div class="nat-card" data-aos="fade-up">
-          <div class="nat-num"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+          <div class="nat-num"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="42" height="30" loading="lazy" /></picture></div>
           <div class="nat-content">
             <h4>Completed-Sports Training Course</h4>
             <p>National Sports Council &middot; Kathmandu, Nepal &middot; 1 October 2004</p>
@@ -607,7 +619,7 @@
         </div>
 
         <div class="nat-card" data-aos="fade-up">
-          <div class="nat-num"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+          <div class="nat-num"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="42" height="30" loading="lazy" /></picture></div>
           <div class="nat-content">
             <h4>Ministry of Health and Population - Human Organ Transplant Center</h4>
             <p>Bhaktapur, Nepal &middot; 1 November 2013</p>
@@ -615,7 +627,7 @@
         </div>
 
         <div class="nat-card" data-aos="fade-up">
-          <div class="nat-num"><img class="flag-img" src="assets/images/nepal.png" alt="nepal"></div>
+          <div class="nat-num"><picture><source srcset="assets/images/nepal.webp" type="image/webp" /><img class="flag-img" src="assets/images/nepal.webp" alt="Nepal flag" width="42" height="30" loading="lazy" /></picture></div>
           <div class="nat-content">
             <h4>1st National Mayor Cup Karate Championship</h4>
             <p>Bagchaur Municipality, Tharmare, Salyan &middot; 2075</p>

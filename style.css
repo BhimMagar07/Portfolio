@@ -315,6 +315,7 @@ a:hover {
   left: -180px;
   background: var(--clr-primary);
   animation: float1 9s ease-in-out infinite;
+  will-change: transform;
 }
 
 .shape-2 {
@@ -324,6 +325,7 @@ a:hover {
   right: -100px;
   background: var(--clr-red);
   animation: float2 11s ease-in-out infinite;
+  will-change: transform;
 }
 
 .shape-3 {
@@ -334,6 +336,7 @@ a:hover {
   transform: translate(-50%, -50%);
   background: var(--clr-primary2);
   animation: float3 14s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes float1 {
@@ -427,6 +430,7 @@ a:hover {
   border-radius: 50%;
   background: conic-gradient(var(--clr-primary), var(--clr-primary3), var(--clr-red), var(--clr-primary));
   animation: spin 7s linear infinite;
+  will-change: transform;
   z-index: 0;
 }
 
@@ -863,39 +867,6 @@ a:hover {
   /* margin-bottom: 24px; */
 }
 
-/* Core values badges */
-.core-values {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.value-badge {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  background: var(--clr-primary-bg);
-  border: 1px solid var(--clr-primary-bdr);
-  border-radius: var(--radius-md);
-  padding: 10px 14px;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--clr-primary);
-  letter-spacing: 0.03em;
-  transition: background var(--transition), border-color var(--transition), transform var(--transition);
-}
-
-.value-badge:hover {
-  background: var(--clr-primary-bdr);
-  border-color: var(--clr-primary3);
-  transform: translateY(-2px);
-}
-
-.value-icon {
-  font-size: 1.2rem;
-  line-height: 1;
-}
-
 /* Role grid */
 .role-grid {
   display: grid;
@@ -993,113 +964,6 @@ a:hover {
 .past-item span {
   font-size: 0.78rem;
   color: var(--clr-muted);
-}
-
-/* ══════════════════════════════════
-   BELT / CREDENTIALS SECTION
-══════════════════════════════════ */
-.belt-section {
-  background: var(--clr-white);
-  border-top: 1px solid var(--clr-border);
-  border-bottom: 1px solid var(--clr-border);
-  padding: 70px 0;
-}
-
-.belt-inner {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-
-@media (max-width: 760px) {
-  .belt-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-.belt-text {
-  flex: 1;
-}
-
-.belt-text h2 {
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 4vw, 2.7rem);
-  font-weight: 800;
-  color: var(--clr-heading);
-  margin-bottom: 14px;
-}
-
-.belt-text p {
-  color: var(--clr-muted);
-  font-size: 0.95rem;
-  line-height: 1.8;
-}
-
-.belt-visual {
-  flex-shrink: 0;
-}
-
-.belt-rank {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.rank-circle {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: linear-gradient(145deg, #f0f4ff, #e8edf8);
-  border: 3px solid var(--clr-primary);
-  box-shadow: 0 0 0 6px rgba(30, 58, 95, 0.07), var(--shadow-md);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-
-.rank-circle:hover {
-  box-shadow: 0 0 0 10px rgba(30, 58, 95, 0.08), var(--shadow-lg);
-  transform: scale(1.04);
-}
-
-.rank-num {
-  font-family: var(--font-display);
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--clr-primary);
-  line-height: 1;
-}
-
-.rank-label {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--clr-primary2);
-  opacity: 0.7;
-}
-
-.rank-stripes {
-  display: flex;
-  gap: 5px;
-}
-
-.rank-stripes span {
-  display: block;
-  width: 28px;
-  height: 11px;
-  border-radius: 3px;
-  background: #1e3a5f;
-  opacity: 0.85;
-}
-
-.rank-stripes span:nth-child(-n+6) {
-  background: var(--clr-red);
-  opacity: 1;
 }
 
 /* ══════════════════════════════════

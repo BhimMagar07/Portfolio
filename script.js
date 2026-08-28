@@ -1,28 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ─── Circular favicon from profile.png ─── */
-  (function () {
-    const size = 64;
-    const canvas = document.createElement('canvas');
-    canvas.width = canvas.height = size;
-    const ctx = canvas.getContext('2d');
-    const img = new Image();
-    img.src = 'assets/images/profile.png';
-    img.onload = function () {
-      // clip to circle
-      ctx.beginPath();
-      ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
-      ctx.closePath();
-      ctx.clip();
-      ctx.drawImage(img, 0, 0, size, size);
-      // replace favicon
-      let link = document.querySelector("link[rel='icon']");
-      if (!link) { link = document.createElement('link'); link.rel = 'icon'; document.head.appendChild(link); }
-      link.type = 'image/png';
-      link.href = canvas.toDataURL('image/png');
-    };
-  })();
-
   /* ─── Element refs ─── */
   const navbar    = document.getElementById('navbar');
   const hamburger = document.getElementById('hamburger');
