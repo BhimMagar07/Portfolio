@@ -188,4 +188,58 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.innerWidth > 820) closeMenu();
   });
 
+  /* ─── Gallery preview lightbox ─── */
+  const previewGrid = document.querySelector('.gallery-preview-grid');
+  if (previewGrid) {
+    const previewItems = [...previewGrid.querySelectorAll('.gallery-item:not(.gallery-see-more-card)')];
+    const previewLightbox = document.getElementById('preview-lightbox');
+    const previewLbImg    = document.getElementById('preview-lb-img');
+    const previewLbCount  = document.getElementById('preview-lb-counter');
+    const previewTotal    = previewItems.length;
+    let previewCurrent    = 0;
+
+    const pSrcs = previewItems.map(el => el.querySelector('img').src);
+    const pAlts = previewItems.map(el => el.querySelector('img').alt);
+
+    function openPreview(idx) {
+      previewCurrent = (idx + previewTotal) % previewTotal;
+      previewLbImg.src = pSrcs[previewCurrent];
+      previewLbImg.alt = pAlts[previewCurrent];
+      previewLbCount.textContent = `${previewCurrent + 1} / ${previewTotal}`;
+      previewLightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      previewLbImg.style.animation = 'none';
+      previewLbImg.offsetHeight;
+      previewLbImg.style.animation = '';
+    }
+
+    function closePreview() {
+      previewLightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    previewItems.forEach((item, idx) => {
+      item.addEventListener('click', () => openPreview(idx));
+    });
+
+    document.getElementById('preview-lb-close').addEventListener('click', closePreview);
+    document.getElementById('preview-lb-prev').addEventListener('click', e => { e.stopPropagation(); openPreview(previewCurrent - 1); });
+    document.getElementById('preview-lb-next').addEventListener('click', e => { e.stopPropagation(); openPreview(previewCurrent + 1); });
+    previewLightbox.addEventListener('click', e => { if (e.target === previewLightbox) closePreview(); });
+
+    document.addEventListener('keydown', e => {
+      if (!previewLightbox.classList.contains('active')) return;
+      if (e.key === 'Escape')     closePreview();
+      if (e.key === 'ArrowLeft')  openPreview(previewCurrent - 1);
+      if (e.key === 'ArrowRight') openPreview(previewCurrent + 1);
+    });
+
+    let pTouchX = 0;
+    previewLightbox.addEventListener('touchstart', e => { pTouchX = e.touches[0].clientX; }, { passive: true });
+    previewLightbox.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - pTouchX;
+      if (Math.abs(dx) > 50) openPreview(dx < 0 ? previewCurrent + 1 : previewCurrent - 1);
+    });
+  }
+
 });

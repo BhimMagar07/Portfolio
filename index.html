@@ -39,6 +39,7 @@
         <li><a href="#international" class="nav-link">International</a></li>
         <li><a href="#national" class="nav-link">National</a></li>
         <li><a href="#organized" class="nav-link">Programs</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -756,6 +757,50 @@
     </div>
   </section>
 
+  <!-- ══ GALLERY PREVIEW SECTION ══ -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Moments &amp; Memories</span>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">A glimpse into the journey — tournaments, training, and milestones</p>
+      </div>
+
+      <div class="gallery-preview-grid">
+        <div class="gallery-item" data-aos="fade-up">
+          <img src="assets/images/gallery/IMG-20260829-WA0017.webp" alt="Gallery photo 1" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+          <img src="assets/images/gallery/IMG-20260829-WA0002.webp" alt="Gallery photo 2" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+          <img src="assets/images/gallery/IMG-20260829-WA0003.webp" alt="Gallery photo 3" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+          <img src="assets/images/gallery/IMG-20260829-WA0005.webp" alt="Gallery photo 4" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+          <img src="assets/images/gallery/IMG-20260829-WA0007.webp" alt="Gallery photo 5" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <a href="gallery.html" class="gallery-item gallery-see-more-card" data-aos="fade-up" aria-label="View full gallery">
+          <img src="assets/images/gallery/IMG-20260829-WA0010.webp" alt="Gallery photo 6" loading="lazy" />
+          <div class="gallery-more-overlay">
+            <div class="gallery-more-inner">
+              <span class="gallery-more-label">See More</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+  </section>
+
   <section class="section contact-section" id="contact">
     <div class="container">
       <div class="section-header">
@@ -816,6 +861,16 @@
       </div>
     </div>
   </footer>
+  <!-- Gallery preview lightbox -->
+  <div class="lightbox" id="preview-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="preview-lb-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="preview-lb-prev" aria-label="Previous photo">&#8592;</button>
+    <div class="lightbox-inner">
+      <img src="" alt="Gallery photo" id="preview-lb-img" />
+    </div>
+    <button class="lightbox-nav lightbox-next" id="preview-lb-next" aria-label="Next photo">&#8594;</button>
+    <div class="lightbox-counter" id="preview-lb-counter">1 / 5</div>
+  </div>
   <script src="script.js"></script>
 </body>
 
